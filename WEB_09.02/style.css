@@ -1,0 +1,131 @@
+body {
+    position: relative;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 0px 40px;
+    height: 80px;
+    top: 0;
+    background-color: white;
+    z-index: 10000;
+}
+.logo {
+    height: 60px;
+    padding: 10px 20px;
+}
+
+.nav_button {
+    font-size: 1.2rem;
+    color: gray;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+.wrap_button {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner {
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+}
+
+#content {
+    display: flex;
+}
+
+#content .sidebar {
+    padding: 1rem;
+    width: 20%;
+    text-align: left;
+}
+
+#content .section {
+    width: 80%;
+    padding: 24px;
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+}
+
+#content .section .card-area {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#content .section .card {
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+.card:hover .opacity {
+    display: block;
+}
+.opacity {
+    position: absolute;
+    width:300px;
+    height: 429px;
+    display: none;
+    background-color: gray;
+    opacity: 0.7;
+    box-sizing: border-box;
+}
+.opacity a {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+    display: block;
+    margin: 200px 0;
+}
+
+#content .section .card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#content .section .card .tit {
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    line-height: 40px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
